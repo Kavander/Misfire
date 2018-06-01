@@ -68,20 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<h1>Welcome to our little mission!</h1>
-
-	<div id="body">
-		<p>So what are we here to do? Well I thought that I should start a little project.</p>
-
-		<ul>
-			<li>Setup a login system</li>
-			<li>Setup a database for to-do's and reminders</li>
-			<li>Implement markdown as a texteditor and format</li>
-			<li>Write the necesary javascript to make changes in the text save real time</li>
-			<li>Implement movable post-it notes</li>
-			<li>Make a mobile view</li>
-		</ul>
-	</div>
+	<h1>You suck!</h1>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>

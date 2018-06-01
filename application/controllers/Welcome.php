@@ -20,6 +20,30 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->database();
+		$this->load->library('session');
+		// load the library
+
+		$this->load->library('SimpleLoginSecure/SimpleLoginSecure');
 		$this->load->view('welcome_message');
+	}
+	public function login()
+	{
+		$this->load->database();
+		$this->load->library('session');
+		$this->load->library('SimpleLoginSecure/SimpleLoginSecure');
+
+		    $this->load->view('login');
+
+	}
+
+	public function parsedown()
+	{
+		$this->load->database();
+		$this->load->library('session');
+		$this->load->library('Parsedown/Parsedown');
+		$data['Parsedown'] = new Parsedown();
+		$this->load->view('parsedown', $data);
+
 	}
 }
